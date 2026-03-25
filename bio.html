@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- V2-0 -->
     <title>FT BIO 🧬</title>
     <style>
         body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #b2fba5 0%, #b2fba5 100%); background-size: 600% 600%; animation: gradientShift 20s ease infinite; color: #e0e0ff; text-align: center; padding: 50px; min-height: 100vh; } }
@@ -15,50 +16,6 @@
     </style>
 <style>
 <style>
-/* TRISEUM COSMIC BACKGROUND v1 */
-body { 
-  margin: 0; 
-  background: #0a0a1f; 
-  overflow-x: hidden;
-  font-family: 'Courier New', monospace;
-}
-
-.hero-section {
-  height: 100vh;
-  background: 
-    radial-gradient(ellipse at bottom, #1a0033 0%, transparent 70%),
-    radial-gradient(ellipse at top, #ff00ff20 0%, transparent 70%),
-    linear-gradient(45deg, #0a0a2a 0%, #1a0033 50%, #2a0e5a 100%);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: 
-    radial-gradient(circle at 20% 80%, #00ff8820 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, #ffaa0020 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, #8a2be220 0%, transparent 50%);
-  animation: particleFloat 20s infinite linear;
-}
-
-@keyframes particleFloat {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-20px) scale(1.1); }
-}
-
-.hero-title {
-  text-align: center;
-  color: #00ff88;
-  text-shadow: 0 0 30px #00ff88;
-  z-index: 10;
-  animation: glow 3s ease-in-out infinite alternate;
-}
 
 @keyframes glow {
   from { text-shadow: 0 0 20px #00ff88, 0 0 30px #00ff88; }
@@ -142,7 +99,6 @@ body {
 </head>
 <body>
 <!-- FTEL TOP NAVIGATION -->
-<!-- FTEL TOP NAVIGATION -->
 <nav class="ftel-nav">
     <div class="nav-container">
         <a href="index.html" class="nav-link">🌌 Universe</a>
@@ -154,11 +110,12 @@ body {
 </nav>
 
 
+
 <!-- 🌌 MILKY WAY HERO - WORKING -->
 <style>
 .hero-section {
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1643780668909-580822430155?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('/static/images/bio.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -191,7 +148,7 @@ body {
     <!-- <h1 style="font-family: 'Courier New', monospace; font-size: 6vw; margin: 0; letter-spacing: 8px; color: #ffaa00; text-shadow: 0 0 30px #ffaa00; font-weight: 900;">FINE TUNING ENGINEERING LABS</h1> -->
     
     <h2 style="font-size: 3vw; color: #ffaa00; margin: 20px 0; text-shadow: 0 0 30px #ffaa00;">BIO LAB</h2>
-    <p style="font-size: 1.8vw; color: white;">V1.0</p>
+    <p style="font-size: 1.8vw; color: white;">V2.0</p>
   </div>
 </div>
 
@@ -200,11 +157,21 @@ body {
 
 <!-- BIO ORGAN CROSSTALK - PURPLE THEME -->
 <div class="calib-box" style="background: #f3e8ff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #6f42c1; box-shadow: 0 15px 40px rgba(111,66,193,0.2);">
-    <h2 style="color: #6f42c1; text-align: center; font-size: 28px; margin: 0 0 25px 0; text-shadow: 0 0 15px rgba(111,66,193,0.5);">🧬 10 ORGAN CROSSTALK SYSTEM</h2>
+    <h2 style="color: #6f42c1; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 10 ORGAN CROSSTALK SYSTEM</h2>
 
-    <p style="color: #1e3a8a; text-align: center; font-size: 20px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1.6;">
-        <strong>Challenge:</strong> 10 organs, 9 must ALL send signals to the Brain (CPU). Fail ANY ONE = cascade failure → BODY SHUTDOWN! Probability that all organs could have adapted gradually over time to sustain life? Lets find out.
-    </p>
+ <video style="border-radius: 20px; width: 50%; height: auto; display: block; margin: 0 auto; max-width:800px;" autoplay loop>
+    <source src="/static/images/body.mp4" type="video/mp4">
+    Your browser doesn't support video. Download: <a href="body.mp4">MP4</a>
+  </video>
+
+
+
+    <p style="color: #1e3a8a; text-align: center; font-size: 20px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 3;">
+        <strong>Challenge:</strong> 10 organs, 9 must ALL send signals to the Brain (CPU). ANY ONE FAILS = cascade failure → BODY SHUTDOWN!</p>
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1.0;">
+        <strong>TEST:</strong> What is the Probability that all organs could have adapted gradually over time to sustain life? Lets find out with toggles below:</p>
+
+
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
         <!-- Brain CPU -->
         <label style="display: flex; align-items: left; gap: 10px; cursor: pointer;">
@@ -301,7 +268,6 @@ body {
     <div style="font-size: 14px; opacity: 0.9; margin-top: 8px;">(1 in 1 million per ticket)</div>
 </div> -->
 
-
 <style>
 
 .toggle-switch {
@@ -374,143 +340,7 @@ document.getElementById('resetBtn').addEventListener('click', function() {
 </script>
 </div>
 
-<!-- SLIDER CHAOS v3.3 - LIMIT MARKS -->
-<!-- <div id="chaos-section" style="background: #ffffff; padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #e0e0e0; position: relative;">
-    <h3 style="color: #00bfff; text-align: center; margin: 0 0 20px 0; font-size: 24px;">💥 SLIDER CHAOS v3.3</h3>
-<p style="color: #1e3a8a !important; text-align: center; font-size: 16px; margin: 10px 0 20px 0; font-style: italic; font-weight: 500;">
-<strong>Test:</strong> One tiny slider nudge crashes stars OR explodes the universe. How precise does physics need to be? 💥⚖️</p>
-    
-    
-    <div style="margin-bottom: 40px;">
-        <label style="display: block; color: #00bfff; font-weight: bold; margin-bottom: 8px;">Strong Force</label>
-        <input type="range" id="s" min="0.99" max="1.01" step="0.0001" value="1" class="chaos-slider">
-        <span id="sd" style="color: #666; font-family: monospace; font-size: 16px;">1.000</span>
-    </div>
-    
-    <div>
-        <label style="display: block; color: #00bfff; font-weight: bold; margin-bottom: 8px;">Gravity</label>
-        <input type="range" id="g" min="0.98" max="1.02" step="0.0001" value="1" class="chaos-slider">
-        <span id="gd" style="color: #666; font-family: monospace; font-size: 16px;">1.000</span>
-    </div>
-    
-    <button onclick="resetChaos()" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #00bfff, #1e90ff); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 20px 0;">🔄 CHAOS RESET</button>
-    
-    <div id="out" style="background: linear-gradient(135deg, #f8f9ff, #e6f3ff); color: #333; padding: 20px; border-radius: 15px; font-weight: bold; text-align: center; border: 2px solid #00bfff; font-size: 18px;">UNIVERSE OK</div>
-</div>
 
-<style>
-/* COMPACT WIDE SLIDERS WITH LIMIT MARKS */
-.chaos-slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 280px; /* Narrower than 100% */
-    height: 12px;
-    border-radius: 6px;
-    background: #e8f4ff;
-    outline: none;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.chaos-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 28px;
-    height: 28px;
-    background: #00bfff;
-    border-radius: 4px; /* Square with tiny corners */
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,191,255,0.4);
-    border: 2px solid #ffffff;
-    margin-top: -8px;
-}
-
-.chaos-slider::-moz-range-thumb {
-    width: 28px;
-    height: 28px;
-    background: #00bfff;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,191,255,0.4);
-    border: 2px solid #ffffff;
-    border: none;
-}
-</style> -->
-
-<!-- SAME SCRIPT - NO CHANGES NEEDED -->
-<!-- <script>
-let chaosReady = false;
-
-function c(){
-    let s=document.getElementById('s').value;
-    let g=document.getElementById('g').value;
-    document.getElementById('sd').innerHTML=s;
-    document.getElementById('gd').innerHTML=g;
-    let o=document.getElementById('out');
-    if(s<0.995){
-        o.innerHTML='NO STARS!';o.style.color='#f00';
-    } else if(s>1.005){
-        o.innerHTML='NO CHEMISTRY!';o.style.color='#f80';
-    } else if(g<0.99){
-        o.innerHTML='NO GALAXIES!';o.style.color='#f00';
-    } else if(g>1.01){
-        o.innerHTML='BIG CRUNCH!';o.style.color='#f00';
-    } else {
-        o.innerHTML='UNIVERSE OK';o.style.color='#333';
-    }
-}
-
-function resetChaos() {
-    document.getElementById('s').value = 1;
-    document.getElementById('g').value = 1;
-    c();
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-    if(!chaosReady){
-        document.getElementById('s').oninput=c;
-        document.getElementById('g').oninput=c;
-        c();
-        chaosReady = true;
-    }
-});
-</script>
-
-<script>
-let chaosReady = false;
-
-function c(){
-    let s=document.getElementById('s').value;
-    let g=document.getElementById('g').value;
-    document.getElementById('sd').innerHTML=s;
-    document.getElementById('gd').innerHTML=g;
-    let o=document.getElementById('out');
-    if(s<0.995){
-        o.innerHTML='NO STARS!';o.style.color='#f00';
-    } else if(s>1.005){
-        o.innerHTML='NO CHEMISTRY!';o.style.color='#f80';
-    } else if(g<0.99){
-        o.innerHTML='NO GALAXIES!';o.style.color='#f00';
-    } else if(g>1.01){
-        o.innerHTML='BIG CRUNCH!';o.style.color='#f00';
-    } else {
-        o.innerHTML='UNIVERSE OK';o.style.color='#333';
-    }
-}
-
-function resetChaos() {
-    document.getElementById('s').value = 1;
-    document.getElementById('g').value = 1;
-    c();
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-    if(!chaosReady){
-        document.getElementById('s').oninput=c;
-        document.getElementById('g').oninput=c;
-        c();
-        chaosReady = true;
-    }
-});
-</script> -->
 
 
 <!-- MASTER RESET CONTROL PANEL v9.2 - SPACESHIP EDITION -->
@@ -573,8 +403,8 @@ if(typeof resetAll === 'function') {
 </script> -->
 
 <!-- BIO ORGAN CROSSTALK EXPLAINER - PURPLE THEME -->
-<div style="background: #f3e8ff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #6f42c1; box-shadow: 0 15px 40px rgba(111,66,193,0.2);">
-    <h2 style="color: #6f42c1; text-align: center; font-size: 28px; margin: 0 0 25px 0; text-shadow: 0 0 15px rgba(111,66,193,0.5);">🧬 ORGAN CROSSTALK EXPLAINED</h2>
+<div style="background: #ffffff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #6f42c1; box-shadow: 0 15px 40px rgba(111,66,193,0.2);">
+    <h2 style="color: #6f42c1; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 ORGAN CROSSTALK EXPLAINED</h2>
 
     <p style="color: #1e3a8a; text-align: center; font-size: 20px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1.6;">
         <strong>Challenge:</strong> 10 organs send 24/7 signals via nerves/hormones to brain. ANY ONE fails = cascade shutdown of the body! Perfect sync all at the same time... Probability = Near zero.
@@ -632,6 +462,913 @@ if(typeof resetAll === 'function') {
             <p style="color: #666; margin: 0; font-size: 15px;">Cytokines signal infection/inflammation. Fail = autoimmune attack or sepsis.</p>
         </div>
 
+    </div>
+</div>
+
+<!-- DNA GRID + CHALLENGE (matches organ crosstalk exactly) -->
+<div style="background: #fce4ec; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #e91e63; box-shadow: 0 15px 40px rgba(233,30,99,0.2);">
+    
+    <h2 style="color: #6f42c1; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 DNA CODE PERFECTION</h2>
+
+ <video style="border-radius: 20px; width: 35%; height: auto; display: block; margin: 0 auto; max-width:800px;" autoplay loop>
+    <source src="/static/images/dna.mp4" type="video/mp4">
+    Your browser doesn't support video. Download: <a href="dna.mp4">MP4</a>
+  </video>
+
+    <p style="color: #1e3a8a; text-align: center; font-size: 20px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 3;">
+        <strong>Challenge:</strong> 4 DNA bases (ATGC) + 6 molecular specs must ALL align perfectly. 1 error = no genetic code, no life!
+    </p>
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1;">
+       <strong>Test:</strong> Does random chemistry hit this precision? Calculate the probability all align at the same time on their own!
+    </p>
+
+
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+    <!-- ROW 1 -->
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🧬 Adenine</span>
+        <div class="dna-toggle" data-win="0.0001"><span class="toggle-circle"></span></div>
+    </label>
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🧬 Thymine</span>
+        <div class="dna-toggle" data-win="0.0001"><span class="toggle-circle"></span></div>
+    </label>
+    
+    <!-- ROW 2 -->
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🧬 Guanine</span>
+        <div class="dna-toggle" data-win="0.0001"><span class="toggle-circle"></span></div>
+    </label>
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🧬 Cytosine</span>
+        <div class="dna-toggle" data-win="0.0001"><span class="toggle-circle"></span></div>
+    </label>
+    
+    <!-- ROW 3 -->
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🔗 Chiral Selection</span>
+        <div class="dna-toggle" data-win="0.001"><span class="toggle-circle"></span></div>
+    </label>
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🧪 Ribose Stability</span>
+        <div class="dna-toggle" data-win="0.001"><span class="toggle-circle"></span></div>
+    </label>
+    
+    <!-- ROW 4 -->
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🔗 Phosphodiester</span>
+        <div class="dna-toggle" data-win="0.001"><span class="toggle-circle"></span></div>
+    </label>
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🎯 Base Stacking</span>
+        <div class="dna-toggle" data-win="0.0001"><span class="toggle-circle"></span></div>
+    </label>
+    
+    <!-- ROW 5 -->
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">🌡️ Temp Window</span>
+        <div class="dna-toggle" data-win="0.0001"><span class="toggle-circle"></span></div>
+    </label>
+    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <span style="color: #6f42c1; font-weight: bold; font-size: 18px; min-width: 70px;">⚡Enzyme Energy</span>
+        <div class="dna-toggle" data-win="0.00001"><span class="toggle-circle"></span></div>
+    </label>
+</div>
+
+
+
+<!-- COMPLETE DNA SCRIPT FROM BUTTON (copy from here down) -->
+    <button id="dnaResetBtn" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #e91e63, #c2185b); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 30px 0;">🔄 DNA RESET</button>
+
+    <div id="dnaResultBox" style="background: #f0f4ff; color: #000; padding: 25px; border-radius: 15px; border: 2px solid #e91e63; font-size: 20px; text-align: center; margin-top: 20px; display: none;">
+        <div id="dnaComputing" style="font-size: 24px; color: #e91e63;">🧬 DNA COMPUTING...</div>
+        <div id="dnaFinalResult" style="display: none;">
+            DNA Life-permitting: <span id="dnaProbProd">1.000</span><br>
+            1 in 10<sup id="dnaTotalExp">0</sup><br>
+            (<span id="dnaWinCount">0</span> constants)
+        </div>
+    </div>
+
+<!-- TREES BOX - ADD THIS after dnaResultBox -->
+<div id="dnaTreeBox" style="background: linear-gradient(135deg, #e91e63, #ad1457); color: white; padding: 25px; border-radius: 15px; margin-top: 15px; display: none; box-shadow: 0 10px 30px rgba(233,30,99,0.4); border: 2px solid #ff99cc;">
+    <div style="font-size: 22px; font-weight: bold; margin-bottom: 10px;">🌳 FORESTS COMPARISON</div>
+    <div style="font-size: 28px; text-shadow: 0 0 10px rgba(255,255,255,0.5);">
+      1 in <span id="treeCount">0</span> sets of all the trees on the entire Earth!
+    </div>
+    <div style="font-size: 18px; opacity: 0.9; margin-top: 8px;">(There are 3 trillion trees worldwide!)</div>
+</div>
+
+
+    <!-- DNA CSS -->
+    <style>
+    .dna-toggle {
+        position: relative; width: 55px; height: 28px; background: #f8bbd9; border-radius: 14px;
+        transition: all 0.3s ease; cursor: pointer; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .dna-toggle.active {
+        background: linear-gradient(90deg, #e91e63, #c2185b); box-shadow: 0 0 12px rgba(233,30,99,0.4);
+    }
+    .dna-toggle .toggle-circle {
+        position: absolute; top: 2px; left: 2px; width: 24px; height: 24px;
+        background: #fff; border-radius: 50%; transition: transform 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .dna-toggle.active .toggle-circle { transform: translateX(27px); }
+    </style>
+
+    <!-- COMPLETE DNA SCRIPT -->
+    <script>
+    document.querySelectorAll('.dna-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            calculateDNA();
+        });
+    });
+
+    document.getElementById('dnaResetBtn').addEventListener('click', function() {
+        document.querySelectorAll('.dna-toggle').forEach(t => t.classList.remove('active'));
+        document.getElementById('dnaResultBox').style.display = 'none';
+    });
+
+function calculateDNA() {
+    const resultBox = document.getElementById('dnaResultBox');
+    const computing = document.getElementById('dnaComputing');
+    const finalResult = document.getElementById('dnaFinalResult');
+    
+    resultBox.style.display = 'block';
+    computing.style.display = 'block';
+    finalResult.style.display = 'none';
+    
+    setTimeout(() => {
+        const activeToggles = document.querySelectorAll('.dna-toggle.active');
+        const winCount = activeToggles.length;
+        let probProd = 1;
+        
+        activeToggles.forEach(toggle => {
+            const winProb = parseFloat(toggle.dataset.win);
+            probProd *= winProb;
+        });
+        
+        // FIXED: Calculate POSITIVE exponent for "1 in 10^X"
+        const totalExp = probProd > 0 ? Math.round(-Math.log10(probProd)) : 0;
+        
+        document.getElementById('dnaProbProd').textContent = probProd.toExponential(3);
+        document.getElementById('dnaTotalExp').textContent = totalExp;
+        document.getElementById('dnaWinCount').textContent = winCount;
+        
+        // 🌳 FIXED TREES CALC
+        const treesLog = 12;  // 3 trillion = 10^12
+        const treeCount = Math.max(0, Math.floor(totalExp / treesLog));
+        document.getElementById('dnaTreeBox').style.display = 'block';
+        document.getElementById('treeCount').textContent = treeCount.toLocaleString();
+        
+        computing.style.display = 'none';
+        finalResult.style.display = 'block';
+    }, 1500);
+}
+</script>
+
+
+
+</div>
+<!-- DNA EXPLAINER (put BELOW calculator) -->
+<div style="background: #ffffff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #e91e63; box-shadow: 0 15px 40px rgba(233,30,99,0.2);">
+    <h2 style="color: #e91e63; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 DNA CONSTANTS EXPLAINED</h2>
+
+    
+    <p style="color: #880e4f; text-align: center; font-size: 18px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1.6;">
+        <strong>Challenge:</strong> DNA isn't just 4 letters (ATGC) - 10 molecular specs must align perfectly or no genetic code FOR ALL LIFE FORMS! </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🧬 Adenine</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Perfect hydrogen bonding geometry. Wrong shape = no base pairing, no code.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🧬 Thymine</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Methyl group specificity. Uracil works in RNA - DNA demands thymine precision.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🧬 Guanine</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Purine ring geometry. Wrong size = double helix collapse.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🧬 Cytosine</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Amino-keto tautomer lock. Wrong form = mismatched pairing, code corruption.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🔗 Chiral Selection</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">D-sugars only. L-sugars = no replication, instant extinction.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🧪 Ribose Stability</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">2'-OH group fragility. Hydrolyzes in water = genetic material destroyed.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🔗 Phosphodiester</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Backbone chemistry. Wrong linkage = no polymer, no heredity.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🎯 Base Stacking</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Hydrophobic + van der Waals. No stacking = unstable single strands.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">🌡️ Temp Window</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">295-310K Goldilocks. Too hot = denatures, too cold = no chemistry.</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 15px; border-left: 5px solid #e91e63;">
+            <h3 style="color: #6f42c1; margin: 0 0 10px 0;">⚡ Enzyme Energy</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">DNA Polymerization = Creates DNA polymer chains during replication.</p>
+        </div>
+    </div>
+</div>
+
+<!-- AMINO ACID → PROTEIN FOLDING CALCULATOR (BIO PAGE) V.3.0 -->
+<div style="background: #f3e5f5; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #9c27b0; box-shadow: 0 15px 40px rgba(156,39,176,0.2);">
+
+    <h2 style="color: #9c27b0; text-align: center; font-size: 28px; margin: 0 0 10px 0;"> 🧬 AMINO ACIDS → ONE WORKING PROTEIN </h2>
+
+ <video style="border-radius: 20px; width: 35%; height: auto; display: block; margin: 0 auto; max-width:800px;" autoplay loop>
+    <source src="/static/images/abio.mp4" type="video/mp4">
+    Your browser doesn't support video. Download: <a href="abio.mp4">MP4</a>
+  </video>
+
+
+    <p style="color: #4a148c; text-align: center; font-size: 20px; margin: 0 0 25px 0; font-weight: 500; line-height: 3;">
+        <strong>Challenge:</strong> Random chemistry must pick the right amino acids, link them in the right order, then fold one simple, stable, working protein in water—before it all falls apart.
+    </p>
+<p style="color: #4a148c; text-align: center; font-size: 20px; margin: 0 0 25px 0; font-weight: 500; line-height: 1;">
+        <strong>Test:</strong> What is the probability of a small protein (60 Amino Acids) folding into a 3D struture correctly and funtional all on its own? 
+    </p>
+
+    <!-- TOGGLES -->
+	<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px; min-width: 70px;">1️⃣ Right Amino Acid Alphabet</span>
+            <div class="protein-toggle" data-win="0.2"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">2️⃣ Correct Handedness (Chirality)</span>
+            <div class="protein-toggle" data-win="0.1"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">3️⃣ Peptide Bonds (Not Random Links)</span>
+            <div class="protein-toggle" data-win="0.2"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">4️⃣ Correct Sequence for Function</span>
+            <div class="protein-toggle" data-win="0.01"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">5️⃣ Folds into 3D Active Shape</span>
+            <div class="protein-toggle" data-win="0.05"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">6️⃣ Stable in Water (No Falling Apart)</span>
+            <div class="protein-toggle" data-win="0.1"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">7️⃣ No Clumping / Aggregation</span>
+            <div class="protein-toggle" data-win="0.1"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">8️⃣ Right Environment (pH / Temp / Salt)</span>
+            <div class="protein-toggle" data-win="0.1"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">9️⃣ No Destructive Side Reactions</span>
+            <div class="protein-toggle" data-win="0.1"><span class="toggle-circle"></span></div>
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #9c27b0; font-weight: bold; font-size: 18px;">🔟 Actually Useful in a Cell</span>
+            <div class="protein-toggle" data-win="0.05"><span class="toggle-circle"></span></div>
+        </label>
+
+    </div>
+
+    <!-- RESET + RESULT -->
+    <div style="text-align: center; margin: 30px 0;">
+        <button id="proteinResetBtn" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #9c27b0, #6a1b9a); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer;">
+            🔄 RESET PROTEIN
+        </button>
+    </div>
+
+    <div id="proteinResultBox" style="background: #faf5ff; color: #000; padding: 25px; border-radius: 15px; border: 2px solid #9c27b0; font-size: 20px; text-align: center; margin-top: 20px; display: none;">
+        <div id="proteinComputing" style="font-size: 24px; color: #9c27b0;">⚙️ FOLDING & TESTING...</div>
+        <div id="proteinFinalResult" style="display: none;">
+            One life-ready protein: <span id="proteinProbProd">1.000</span><br>
+            1 in 10<sup id="proteinTotalExp">0</sup><br>
+            (<span id="proteinWinCount">0</span> steps aligned)
+        </div>
+    </div>
+</div>
+
+<script>
+// PROTEIN TOGGLES LOGIC (BIO PAGE) – independent class names & IDs
+document.querySelectorAll('.protein-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        calculateProtein();
+    });
+});
+
+document.getElementById('proteinResetBtn').addEventListener('click', function() {
+    document.querySelectorAll('.protein-toggle').forEach(t => t.classList.remove('active'));
+    document.getElementById('proteinResultBox').style.display = 'none';
+});
+
+function calculateProtein() {
+    const resultBox = document.getElementById('proteinResultBox');
+    const computing = document.getElementById('proteinComputing');
+    const finalResult = document.getElementById('proteinFinalResult');
+
+    resultBox.style.display = 'block';
+    computing.style.display = 'block';
+    finalResult.style.display = 'none';
+
+    setTimeout(() => {
+        const activeToggles = document.querySelectorAll('.protein-toggle.active');
+        const winCount = activeToggles.length;
+        let probProd = 1;
+
+        activeToggles.forEach(toggle => {
+            const winProb = parseFloat(toggle.dataset.win);
+            probProd *= winProb;
+        });
+
+        // Avoid log10 of zero if nothing selected
+        const safeProb = probProd > 0 ? probProd : 1;
+        const totalExp = Math.round(-Math.log10(safeProb));
+
+        document.getElementById('proteinProbProd').textContent = safeProb.toExponential(3);
+        document.getElementById('proteinTotalExp').textContent = totalExp;
+        document.getElementById('proteinWinCount').textContent = winCount;
+
+        computing.style.display = 'none';
+        finalResult.style.display = 'block';
+    }, 1500);
+}
+
+// PROTEIN TOGGLE CSS (does not clash with other switches)
+const proteinCSS = `
+.protein-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background: #e1bee7;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.protein-toggle.active { background: #9c27b0; }
+.protein-toggle .toggle-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.protein-toggle.active .toggle-circle {
+    transform: translateX(30px);
+}
+`;
+document.head.insertAdjacentHTML('beforeend', `<style>${proteinCSS}</style>`);
+</script>
+
+<!-- PROTEIN FOLDING EXPLAINER (goes BELOW toggles calculator) -->
+<div style="background: #ffffff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #9c27b0; box-shadow: 0 15px 40px rgba(156,39,176,0.2);">
+    <h2 style="color: #9c27b0; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 PROTEIN FOLDING STEPS EXPLAINED</h2>
+    
+    <p style="color: #4a148c; text-align: center; font-size: 18px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1.6;">
+        <strong>Challenge:</strong> Random amino acids must survive water, link correctly, fold perfectly, AND work as a molecular machine. Each step = precision engineering spec.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">1️⃣ Right Amino Alphabet</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Life uses exactly 20 amino acids. Wrong chemistry set = useless chains, no matter the sequence.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">2️⃣ Left-Handed Only</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Water chemistry makes 50/50 mix. Right-handers break folding geometry = useless tangle.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">3️⃣ Peptide Bonds Only</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Water favors wrong bonds 10:1. Peptide bonds hydrolyze fast = chains fall apart in soup.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">4️⃣ Functional Sequence</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">100 amino chain = 20¹⁰⁰ possibilities. 1 in 10⁶⁰+ actually folds into ANY useful shape.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">5️⃣ Exact 3D Fold</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Must collapse into precise active site geometry. Wrong fold = dead chain in water.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">6️⃣ Water Stable</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Peptide bonds hydrolyze in water. Protein must fold FASTER than it self-destructs.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">7️⃣ No Clumping</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">99% random chains stick together, precipitate out. Only perfect folds stay soluble.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">8️⃣ Perfect Environment</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Wrong pH/salt/temp = instant denaturation. Narrow window or protein junk.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">9️⃣ No Side Reactions</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Oxidation, hydrolysis destroy key residues. Primordial soup = chemical shredder.</p>
+        </div>
+
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 15px; border-left: 5px solid #9c27b0;">
+            <h3 style="color: #9c27b0; margin: 0 0 10px 0;">🔟 Cell-Useful Function</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Even perfect folds might do nothing useful.Protein Needs specific enzyme/channel role.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- FLAGELLUM SECTION WITH IMAGE ON THE RIGHT -->
+<div style="background: #eef6ff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #1976d2; box-shadow: 0 15px 40px rgba(156,39,176,0.2);">
+
+  <h2 style="color: #1976d2; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 Bacterial Flagellum: Irreducible Complexity </h2>
+
+  <video style="border-radius: 20px; width: 35%; height: auto; display: block; margin: 0 auto; max-width:800px;" autoplay loop>
+    <source src="/static/images/flag1.mp4" type="video/mp4">
+    Your browser doesn't support video. Download: <a href="flag1.mp4">MP4</a>
+  </video>
+
+  <p style="color: #1565c0; text-align: center; font-size: 18px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 3;">
+    <strong>Challenge:</strong> Remove ANY core part of this Nano Motor = NO MOTION.</p>
+ <p style="color: #1565c0; text-align: center; font-size: 18px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1;">
+    <strong>Test:</strong> All-or-nothing rotary engineering that can spin up to 100,000 RPM, check the probabilty of correct proteins coming together to build it!</p>
+
+
+  <!-- FLEX ROW: TOGGLES LEFT, IMAGE RIGHT -->
+  <div style="display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap;">
+
+    <!-- TOGGLES BLOCK -->
+    <div style="flex:1 1 260px; min-width:0;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+        <!-- ROW 1 -->
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <span style="color: #1976d2; font-weight: bold; font-size: 18px; min-width: 70px;">⚙️ Stator</span>
+          <div class="flagellum-toggle" data-win="0.15"><span class="toggle-circle"></span></div>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <span style="color: #1976d2; font-weight: bold; font-size: 18px; min-width: 70px;">⚙️ Rotor</span>
+          <div class="flagellum-toggle" data-win="0.15"><span class="toggle-circle"></span></div>
+        </label>
+
+        <!-- ROW 2 -->
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <span style="color: #1976d2; font-weight: bold; font-size: 18px; min-width: 70px;">🦾 Drive Shaft</span>
+          <div class="flagellum-toggle" data-win="0.18"><span class="toggle-circle"></span></div>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <span style="color: #1976d2; font-weight: bold; font-size: 18px; min-width: 70px;">🔗 Hook</span>
+          <div class="flagellum-toggle" data-win="0.17"><span class="toggle-circle"></span></div>
+        </label>
+
+        <!-- ROW 3 -->
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <span style="color: #1976d2; font-weight: bold; font-size: 18px; min-width: 70px;">🚁 Filament</span>
+          <div class="flagellum-toggle" data-win="0.20"><span class="toggle-circle"></span></div>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <span style="color: #1976d2; font-weight: bold; font-size: 18px; min-width: 70px;">🏭 Export</span>
+          <div class="flagellum-toggle" data-win="0.15"><span class="toggle-circle"></span></div>
+        </label>
+      </div>
+    </div>
+</div>
+
+  <!-- RESET BUTTON -->
+  <button id="flagellumResetBtn" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #00bfff, #1e90ff); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 20px;">
+    🔄 RESET ALL
+  </button>
+
+  <!-- RESULT BOX -->
+  <div id="flagellumResultBox" style="margin-top: 20px; display: none;">
+<div id="flagellumComputing" style="padding: 15px 20px; background: #fffbe7; border-radius: 12px; color: #7f6500; font-size: 16px; text-align: center; border: 1px solid #ffd93d; margin: 10px 0; font-weight: 500;">
+      Calculating irreducible complexity...
+    </div>
+    <div id="flagellumFinalResult" style="display: none;">
+      <!-- Results will populate here -->
+    </div>
+  </div>
+
+  <!-- LADDER BOX -->
+  <div id="flagellumLadderBox" style="background: linear-gradient(135deg, #1976d2, #0d47a1); color: white; padding: 25px; border-radius: 15px; margin-top: 15px; display: none; box-shadow: 0 10px 30px rgba(25,118,210,0.4); border: 2px solid rgba(255,255,255,0.3);">
+    <div style="font-size: 22px; font-weight: bold; margin-bottom: 10px;">🧮 IRREDUCIBLE COMPLEXITY LADDER</div>
+    <div style="font-size: 28px; text-shadow: 0 0 10px rgba(255,255,255,0.5);">
+      1 in 10<sup><span id="flagellumTotalExp">0</span></sup>
+    </div>
+    <div style="font-size: 14px; opacity: 0.9; margin-top: 8px;">
+      <span id="flagellumWinCount">0</span> modules × 10<sup>77</sup> = ENGINEERING!
+    </div>
+  </div>
+
+  <!-- STYLES -->
+  <style>
+    .flagellum-toggle {
+      width: 50px; height: 26px; background: #ccc; border-radius: 13px;
+      position: relative; transition: 0.3s; cursor: pointer;
+    }
+    .flagellum-toggle.active {
+      background: #1976d2;
+    }
+    .toggle-circle {
+      width: 22px; height: 22px; background: white; border-radius: 50%;
+      position: absolute; top: 2px; left: 2px; transition: 0.3s;
+    }
+    .flagellum-toggle.active .toggle-circle {
+      transform: translateX(24px);
+    }
+    #flagellumResetBtn {
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- SCRIPTS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const resultBox = document.getElementById('flagellumResultBox');
+      const computing = document.getElementById('flagellumComputing');
+      const finalResult = document.getElementById('flagellumFinalResult');
+      const ladderBox = document.getElementById('flagellumLadderBox');
+
+      const toggles = document.querySelectorAll('.flagellum-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          this.classList.toggle('active');
+
+          // Now calculateFlagellum runs ONCE per toggle, no auto‑run on page load
+          calculateFlagellum();
+        });
+      });
+
+      // RESET BUTTON
+      const resetBtn = document.getElementById('flagellumResetBtn');
+      resetBtn.addEventListener('click', function() {
+        toggles.forEach(toggle => {
+          toggle.classList.remove('active');
+        });
+
+        resultBox.style.display = 'none';
+        ladderBox.style.display = 'none';
+        computing.style.display = 'none';
+        finalResult.style.display = 'none';
+      });
+    });
+
+    function calculateFlagellum() {
+      const resultBox = document.getElementById('flagellumResultBox');
+      const computing = document.getElementById('flagellumComputing');
+      const finalResult = document.getElementById('flagellumFinalResult');
+
+      resultBox.style.display = 'block';
+      computing.style.display = 'block';
+      finalResult.style.display = 'none';
+
+      setTimeout(() => {
+        const activeToggles = document.querySelectorAll('.flagellum-toggle.active');
+        const winCount = activeToggles.length;
+        let probProd = 1;
+
+        activeToggles.forEach(toggle => {
+          const winProb = parseFloat(toggle.dataset.win);
+          probProd *= winProb;
+        });
+
+        const baseModuleOdds = 77;
+        const totalExp = probProd > 0
+          ? Math.round(-Math.log10(probProd) + (winCount * baseModuleOdds))
+          : 0;
+
+        document.getElementById('flagellumTotalExp').textContent = totalExp.toLocaleString();
+        document.getElementById('flagellumWinCount').textContent = winCount;
+        document.getElementById('flagellumLadderBox').style.display = 'block';
+        computing.style.display = 'none';
+        finalResult.style.display = 'block';
+      }, 1500);
+    }
+  </script>
+</div>
+
+<!-- FLAGELLUM ENGINEER (put after abiogenesis) -->
+<div id="flagellumSection" style="background: #ffffff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #1976d2; box-shadow: 0 15px 40px rgba(25,118,210,0.2);">
+    <h2 style="color: #1976d2; text-align: center; font-size: 28px; margin: 0 0 25px 0;">🧬 Bacterial Flagellum: Irreducible Complexity</h2>
+
+    <p style="color: #1565c0; text-align: center; font-size: 18px; margin: 0 0 30px 0; font-style: normal font-weight: 500; line-height: 1.6;">
+        <strong>Challenge:</strong> Remove ANY core part of this complex Nano Motor = NO MOTION. All-or-nothing rotary engineering!
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 15px; border-left: 5px solid #1976d2;">
+            <h3 style="color: #1976d2; margin: 0 0 10px 0;">⚙️ Stator</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Anchored ion channels. Fixed coils = no rotation without stator foundation.</p>
+        </div>
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 15px; border-left: 5px solid #1976d2;">
+            <h3 style="color: #1976d2; margin: 0 0 10px 0;">⚙️ Rotor</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Spinning ring powered by stator ions. No rotor = no torque transmission.</p>
+        </div>
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 15px; border-left: 5px solid #1976d2;">
+            <h3 style="color: #1976d2; margin: 0 0 10px 0;">🦾 Drive Shaft</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Torque through cell wall. No shaft = power trapped inside cell.</p>
+        </div>
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 15px; border-left: 5px solid #1976d2;">
+            <h3 style="color: #1976d2; margin: 0 0 10px 0;">🔗 Hook (Universal Joint)</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Flexible connection motor-to-propeller. No hook = rigid failure.</p>
+        </div>
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 15px; border-left: 5px solid #1976d2;">
+            <h3 style="color: #1976d2; margin: 0 0 10px 0;">🚁 Filament (Propeller)</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Helical blade pushes fluid. No propeller = no propulsion.</p>
+        </div>
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 15px; border-left: 5px solid #1976d2;">
+            <h3 style="color: #1976d2; margin: 0 0 10px 0;">🏭 Export System</h3>
+            <p style="color: #666; margin: 0; font-size: 15px;">Nano-factory ships parts outside. No export = parts never assemble.</p>
+        </div>
+    </div>
+</div>
+
+<div style="background:#e3f2fd; margin:20px 0; padding:20px; border-radius:15px; border-left:5px solid #1976d2; font-size:20px; line-height:1.6;">
+  <h3 style="color:#1976d2; margin:0 0 10px 0;">KNOWLEDGE NUGGET: 📈 Why 1 in 10^467 for the Flagellum?</h3>
+  <p style="color:#333; margin:0 0 30px 0;">
+    This huge number isn’t random. It comes from stacking the odds for each core flagellum module.
+  </p>
+  <ul style=" margin:0 0 10px 15px; padding:0; list-style:disc; color: #444;">
+    <li>Biophysics estimates that getting a single, smallish, functional protein fold (150 Amino Acids) by chance can be on the order of 1 in 10^77 (See Douglas Axe reasearch).</li>
+    <li>The flagellum nano motor needs many different proteins working together (for stator, rotor, drive shaft, hook, filament, export). The motor is made up of <strong>30</strong> different protein parts. </li>
+    <li>The flagellum nano motor is made up of approximately <strong>30</strong> different protein parts. </li>
+    <li>The flagellum motor measures approximately 25 to 50 nanometeres in diameter, a human hair average diameter is 100 micrometers. This means <strong>4,000,000</strong> of these motors could fit in
+ the <strong>cross sectional area</strong> of a human hair. </li>
+    <li>When you combine multiple such modules, the total probability collapses exponentially, giving exponents in the hundreds.</li>
+  </ul>
+  <p style="color:#333; margin:0;">
+    So a result like <strong>1 in 10<sup>467</sup> </strong> is a conservative illustration of how fast the odds crash once you require multiple coordinated, correctly folded, correctly placed protein systems to appear and work together.
+    This shows an engineering like signature, certainly not an accident.
+  </p>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- FAMILY-FRIENDLY REPRODUCTIVE LOCKSTEP -->
+<div id="reproSection" style="background: #ffebee; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #f44336; box-shadow: 0 15px 40px rgba(244,67,54,0.2);">
+
+    <h2 style="color: #2986cc; text-align: center; font-size: 28px; margin: 0 0 25px 0;">👨‍👩‍👧‍👦 Human Reproduction (Team Mom & Dad)</h2>
+
+  <video style="border-radius: 20px; width: 35%; height: auto; display: block; margin: 0 auto; max-width:800px;" autoplay loop>
+    <source src="/static/images/baby.mp4" type="video/mp4">
+    Your browser doesn't support video. Download: <a href="baby.mp4">MP4</a>
+  </video>
+
+
+    <p style="color: #2986cc; text-align: center; font-size: 22px; margin: 0 0 30px 0; font-weight: 500; line-height: 3;">
+        <strong>Challenge:</strong> Team Mom & Dad must work perfectly together OR no babies! Team failure = end of family line! </p>
+    <p style="color: #2986cc; text-align: center; font-size: 22px; margin: 0 0 30px 0; font-weight: 500; line-height: 1;">
+        <strong>Test:</strong> How many things do Team Mom & Dad need to get right so "You" can join the family line, toggle and see! </p>
+
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+        <!-- ROW 1 -->
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #2986cc; font-weight: bold; font-size: 18px; min-width: 90px;">💪 Blood Flow</span>
+            <div class="repro-toggle" data-win="0.12"><span class="toggle-circle"></span></div>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #2986cc; font-weight: bold; font-size: 18px; min-width: 90px;">💧 Fluid Power</span>
+            <div class="repro-toggle" data-win="0.15"><span class="toggle-circle"></span></div>
+        </label>
+
+        <!-- ROW 2 -->
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #2986cc; font-weight: bold; font-size: 18px; min-width: 90px;">🏊 Swimmer Team</span>
+            <div class="repro-toggle" data-win="0.14"><span class="toggle-circle"></span></div>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #2986cc; font-weight: bold; font-size: 18px; min-width: 90px;">🧴 Safe Slippery</span>
+            <div class="repro-toggle" data-win="0.13"><span class="toggle-circle"></span></div>
+        </label>
+
+        <!-- ROW 3 -->
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #2986cc; font-weight: bold; font-size: 18px; min-width: 90px;">📏 Stretch Fit</span>
+            <div class="repro-toggle" data-win="0.16"><span class="toggle-circle"></span></div>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <span style="color: #2986cc; font-weight: bold; font-size: 18px; min-width: 90px;">🎯 Life Spark</span>
+            <div class="repro-toggle" data-win="0.10"><span class="toggle-circle"></span></div>
+        </label>
+	<!-- ADD THESE TO ROW 4 + 5 -->
+	 <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+             <span style="color:#2986cc; font-weight:bold;">⏰ Ovulation Sync</span>
+   	     <div class="repro-toggle" data-win="0.11"><span class="toggle-circle"></span></div>
+	</label>
+	 <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+	     <span style="color:#2986cc; font-weight:bold;">🛡️ Immune Tolerance</span>
+   	     <div class="repro-toggle" data-win="0.09"><span class="toggle-circle"></span></div>
+	</label>
+	 <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+	     <span style="color:#2986cc; font-weight:bold;">🌡️ Hormone Waves</span>
+             <div class="repro-toggle" data-win="0.10"><span class="toggle-circle"></span></div>
+	</label>
+	 <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+	     <span style="color:#2986cc; font-weight:bold;">🧬 Embryo Landing</span>
+             <div class="repro-toggle" data-win="0.08"><span class="toggle-circle"></span></div>
+	</label>   
+ </div>
+<button id="reproResetBtn" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #f44336, #e91e63); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 20px;">
+    🔄 RESET ALL
+</button>
+
+</div>
+<div id="reproResultBox" style="display:none; margin-top:20px; padding:15px; background:#ffebee; border-radius:12px; border:1px solid #f44336; text-align:center;">
+    <div id="reproComputing" style="color:#d32f2f; font-weight:bold; font-size:16px;">🔄 Crunching family team odds...</div>
+    <div id="reproFinalResult" style="display:none;">
+        <p style="margin:8px 0; font-size:22px; color:#2986cc;">
+            <strong>✅ Team Mom & Dad parts working:</strong> <span id="reproWinCount">0</span>/10 
+        </p>
+        <p style="margin:8px 0; font-size:20px; color:#00a86b;">
+            <strong>Team-up odds:</strong> <br><strong>1 in 10<sup><span id="reproTotalExp">0</span></sup></strong></p>
+
+<div id="reproLadderBox" style="margin-top:12px; font-size:18px; color:#2986cc; display:none; text-align: center; line-height: 1.5;">
+    👨‍👩‍👧‍👦 One part fails = NO BABIES = family line ENDS!<br>
+    All 10 working together? 1 in 10<sup>1000</sup> is so close to zero that it’s statistically impossible—yet it happens every day!<br>
+    And that’s just the beginning!
+</div>
+</div>
+<style>
+.repro-toggle {
+    width: 50px; height: 26px;background: #ffcdd2;          /* light red to match section */
+    border-radius: 13px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.15);
+}
+
+.repro-toggle .toggle-circle {
+    width: 22px; height: 22px; background: white;
+    border-radius: 50%;
+    position: absolute; top: 2px; left: 2px;    transition: 0.3s;
+}
+
+/* ON STATE */
+.repro-toggle.active {
+    background: #d32f2f;          /* strong red for “on” */
+}
+
+.repro-toggle.active .toggle-circle {
+    transform: translateX(24px);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Attach click handlers to every repro toggle
+    document.querySelectorAll('.repro-toggle').forEach(function (t) {
+        t.addEventListener('click', function () {
+            this.classList.toggle('active');
+            calculateRepro();   // auto-calc on every click
+        });
+    });
+});
+
+function calculateRepro() {
+    const resultBox   = document.getElementById('reproResultBox');
+    const computing   = document.getElementById('reproComputing');
+    const finalResult = document.getElementById('reproFinalResult');
+
+    resultBox.style.display = 'block';
+    computing.style.display = 'block';
+    finalResult.style.display = 'none';
+
+    setTimeout(function () {
+        const activeToggles = document.querySelectorAll('.repro-toggle.active');
+        const winCount = activeToggles.length;
+        let probProd = 1;
+
+        activeToggles.forEach(function (toggle) {
+            const winProb = parseFloat(toggle.dataset.win);
+            probProd *= winProb;
+        });
+// RESET HANDLER
+const resetBtn = document.getElementById('reproResetBtn');
+resetBtn.addEventListener('click', function () {
+    document.querySelectorAll('.repro-toggle').forEach(function (toggle) {
+        toggle.classList.remove('active');
+    });
+    document.getElementById('reproResultBox').style.display = 'none';
+    // no need to show “computing” again until next click
+});
+   
+     // Repro = deeper than flagellum
+        const baseReproOdds = 100; // each working part adds ~10^100 of extra “search depth”
+
+        let totalExp = 0;
+        if (probProd > 0 && winCount > 0) {
+            totalExp = Math.round(-Math.log10(probProd) + winCount * baseReproOdds);
+        }
+
+        document.getElementById('reproWinCount').textContent = winCount;
+        document.getElementById('reproTotalExp').textContent = totalExp.toLocaleString();
+
+        computing.style.display = 'none';
+        finalResult.style.display = 'block';
+	document.getElementById('reproLadderBox').style.display = 'block';
+    }, 1000); // little delay for “computing…” feel
+}
+</script>
+</div>
+<!-- REPRODUCTIVE EXPLAINER (put BELOW repro toggles) -->
+<div style="background: #ffffff; margin: 40px 0; padding: 30px; border-radius: 20px; border: 2px solid #f44336; box-shadow: 0 15px 40px rgba(244,67,54,0.2);">
+    <h2 style="color: #2986cc; text-align: center; font-size: 28px; margin: 0 0 25px 0;">👨‍👩‍👧‍👦 Baby Reproduction (TEAM MOM & DAD)</h2>
+    
+    <p style="color: #2986cc; text-align: center; font-size: 18px; margin: 0 0 30px 0; font-style: normal; font-weight: 500; line-height: 1.6;">
+        <strong>Challenge:</strong> ALL 10 parts must work together perfectly or NO new babies! One missing = family line ends!
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">💪 Blood Flow</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Male Special blood chambers fill perfectly. Wrong rigidity/size/shape = no fit, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">💧 Fluid Power </h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Liquid rocket pushes swimmers forward. No or half power = swimmers drown, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">🏊 Swimmer Team </h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Millions power swim maze to target. Weak swimmers = lost team, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">🧴 Safe Slippery</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Perfect female slippery path made on time. Dry/wrong chemicals = infection, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">📏 Stretch Fit</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Female stretchy walls expand perfectly. Too tight/too loose = injury, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">🎯 Life Spark</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Swimmer + egg fuse perfectly. Wrong timing/chemistry = no new life spark.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">⏰ Egg Release</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Egg drops EXACT 24hr window. Early/late = swimmers die waiting, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">🛡️ Mom Protection</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Mom accepts baby (half foreign). Reject reflex = auto-miscarry, no babies.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">🌡️ Hormone Dance</h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Chemical waves prep baby bed. Wrong timing = thin walls, baby falls out.</p>
+        </div>
+        
+        <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+            <h3 style="color: #2986cc; margin: 0 0 10px 0;">🏠 Baby Landing </h3>
+            <p style="color: #667; margin: 0; font-size: 15px;">Baby nestles day 6-10 perfectly. Wrong spot/depth = no attachment, no babies.</p>
+        </div>
     </div>
 </div>
 
