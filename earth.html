@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- v2.0-->
+<!-- v2.1-->
     <title>FT EARTH 🌍</title>
     <style>
         body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #89cff0 0%, #89cff0 100%); background-size: 600% 600%; animation: gradientShift 20s ease infinite; color: #e0e0ff; text-align: center; padding: 50px; min-height: 100vh; } }
@@ -161,7 +161,7 @@
     <!-- <h1 style="font-family: 'Courier New', monospace; font-size: 6vw; margin: 0; letter-spacing: 8px; color: #ffaa00; text-shadow: 0 0 30px #ffaa00; font-weight: 900;">FINE TUNING ENGINEERING LABS</h1> -->
     
     <h2 style="font-size: 3vw; color: #ffaa00; margin: 20px 0; text-shadow: 0 0 30px #ffaa00;">EARTH LAB</h2>
-    <p style="font-size: 1.8vw; color: white;">V 2.0</p>
+    <p style="font-size: 1.8vw; color: white;">V 2.1</p>
   </div>
 </div>
 
@@ -245,6 +245,7 @@
 <div style="text-align: center; margin: 30px 0;">
  <button id="resetBtn" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #00bfff, #1e90ff); color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer;">🔄 RESET ALL</button>
     </div>
+
 
 
     
@@ -406,6 +407,11 @@ function toggleNugget() {
     content.style.display = 'none';
   }
 }
+function bumpPhi(step) {
+  const input = document.getElementById('phiInput');
+  const current = parseFloat(input.value) || 0;
+  input.value = (current + step).toFixed(10);
+}
 
 </script>
 
@@ -555,27 +561,53 @@ if(typeof resetAll === 'function') {
  <p style="color: #1e3a8a !important; text-align: center; font-size: 20px; margin: 10px 0 20px 0; font-style: normal; font-weight: 500;">
         <strong>User:</strong> Adjust the arrows and hit Test Spiral to see what answer you get! Make Fibonacci proud!!   
  </p>
-
 <div style="display: flex; justify-content: center; margin: 30px 0;">
+
   <div style="text-align: center;">
 
-    <div style="display: flex; gap: 15px; align-items: center; justify-content: center; margin-bottom: 20px;">
-      <input type="number" id="phiInput" step="0.0001" value="1.6180339887"
-             style="padding: 14px; border: 2px solid #28a745; border-radius: 10px; width: 220px; font-size: 20px;">
-      <button onclick="testPhi()" 
-              style="padding: 12px 26px; background: #28a745; color: white; border: none; border-radius: 10px; cursor: pointer; font-size: 18px;">
-        TEST SPIRAL
-      </button>
-    </div>
+    <!-- Input -->
+    <input
+      type="number"
+      id="phiInput"
+      step="0.0001"
+      value="1.6180339887"
+      style="padding: 14px; border: 2px solid #28a745; border-radius: 10px; width: 220px; font-size: 20px; margin-bottom: 16px;">
 
-<button onclick="resetPhi()" style="padding: 12px 26px; background: #28a745; color: #ffffff; border: none; border-radius: 10px; cursor: pointer; font-size: 18px; margin-left: 12px;">
-    🔄 RESET φ
-</button>
- <div id="shellResult" style="color: #ed7117; text-align: center; padding: 18px; min-height: 70px; font-size: 18px;">
+    <!-- Up button -->
+    <button
+      onclick="bumpPhi(0.0001)"
+      style="display: block; margin: 0 auto 12px; padding: 10px 26px; background: #28a745; border: none; border-radius: 10px; color: white; cursor: pointer; font-size: 18px;">
+      ▲
+    </button>
+
+    <!-- Down button -->
+    <button
+      onclick="bumpPhi(-0.0001)"
+      style="display: block; margin: 0 auto 16px; padding: 10px 26px; background: #28a745; border: none; border-radius: 10px; color: white; cursor: pointer; font-size: 18px;">
+      ▼
+    </button>
+
+    <!-- TEST SPIRAL -->
+    <button
+      onclick="testPhi()"
+      style="display: block; margin: 0 auto; padding: 12px 26px; background: #28a745; border: none; border-radius: 10px; color: white; cursor: pointer; font-size: 18px;">
+      TEST SPIRAL
+    </button>
+
+    <!-- RESET φ (optional, same style) -->
+    <button
+      onclick="resetPhi()"
+      style="display: block; margin: 20px auto 0; padding: 10px 26px; background: #28a745; border: none; border-radius: 10px; color: white; cursor: pointer; font-size: 18px;">
+      🔄 RESET φ
+    </button>
+
+  </div>
 </div>
+<div id="shellResult" style="color: #ed7117; text-align: center; padding: 18px; min-height: 70px; font-size: 18px;">
 </div>
-</div>
-</div>
+
+
+
 <!-- Knowledge Nugget Box -->
 <div style="margin-top: 30px; padding: 20px; background: #f0f9ff; border-radius: 15px; border-left: 4px solid #1976d2;">
 
